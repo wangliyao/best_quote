@@ -10,14 +10,14 @@ class QuotesController < Rulers::Controller
   end
 
   def quote_1
-    quote_1 = Rulers::Model::FileModel.find(1)
+    quote_1 = FileModel.find(1)
     render :quote, :obj => quote_1
   end
 
   def show
     quote = FileModel.find(params["id"])
     ua = request.user_agent
-    render_response :quote, :obj => quote, :ua => ua
+    render :quote, :obj => quote, :ua => ua
   end
 
   def new_quote

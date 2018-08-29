@@ -10,8 +10,9 @@ PATH
       sqlite3
 
 GEM
-  remote: https://gems.ruby-china.org/
+  remote: https://gems.ruby-china.com/
   specs:
+    byebug (10.0.2)
     coderay (1.1.2)
     domain_name (0.5.20180417)
       unf (>= 0.0.5, < 1.0.0)
@@ -51,6 +52,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  byebug
   rerun (~> 0.8.0)
   rulers!
 
